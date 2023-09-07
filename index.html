@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Pagina Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS si lo tienes -->
 </head>
 <body>
-    <h1>Bienvenido a mi pagina web</h1>
-    <p>Esta es una pagina web de ejemplo.</p>
+    <header>
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Descripción de la imagen" width="200" height="100" style="border-radius: 50%;">
+        <h1>Josue Israel Rojas Vilca</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>¡Bienvenido a mi Portafolio!</h2>
+        <p>Explora mi trabajo y conoce más sobre mí.</p>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Mi nombre es [Tu Nombre] y soy un [tu profesión o especialización] apasionado por [tu campo de interés]. A lo largo de mi carrera, he tenido la oportunidad de [destacar uno o dos logros o experiencias profesionales notables]. Mi enfoque de trabajo se basa en [tu enfoque principal en tu campo o tus valores profesionales]. Siempre busco [lo que buscas lograr en tus proyectos o trabajos]. Estoy emocionado por cada nuevo proyecto y la oportunidad de [lo que esperas lograr en futuros proyectos o colaboraciones].</p>
+    </section>
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <!-- Aquí puedes agregar tus proyectos con enlaces, imágenes y descripciones -->
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+            <a href="#">Ver más</a>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo electrónico a [tu dirección de correo electrónico] o completar el siguiente formulario:</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © [Año] [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
